@@ -2,7 +2,7 @@ const LOCATIONS = {
   locations: [
     {
       "name": "University District Youth Center",
-      "adress": "4516 15th Ave NE, Seattle, WA 98105",
+      "address": "4516 15th Ave NE, Seattle, WA 98105",
       "zipcode": 98105,
       "phone": "(206) 526-2992",
       "website": "https://youthcare.org/blog/youthcare-welcomes-university-district-youth-center/",
@@ -18,7 +18,7 @@ const LOCATIONS = {
     },
     {
       "name": "Orion Center",
-      "adress": "1828 Yale Ave, Seattle, WA 98101",
+      "address": "1828 Yale Ave, Seattle, WA 98101",
       "zipcode": 98101,
       "phone": "(206) 622-5555",
       "website": "https://youthcare.org/homeless-youth-services/engagement-services/youthcares-orion-center/",
@@ -34,7 +34,7 @@ const LOCATIONS = {
     },
     {
       "name": "Drop In and Young Adult Emergency Shelter",
-      "adress": "2709 3rd Avenue Seattle, WA 98121",
+      "address": "2709 3rd Avenue Seattle, WA 98121",
       "zipcode": 98121,
       "phone": "(206) 374-0866",
       "website": "https://nhmin.org/",
@@ -50,7 +50,7 @@ const LOCATIONS = {
     },
     {
       "name": "Homeless Youth for Peace and Empowerment (HYPE)",
-      "adress": "1609 19th Ave, Seattle, WA 98122",
+      "address": "1609 19th Ave, Seattle, WA 98122",
       "zipcode": 98122,
       "phone": "(206) 726-8500",
       "website": "http://www.psks.org/",
@@ -66,7 +66,7 @@ const LOCATIONS = {
     },
     {
       "name": "Jackson Street",
-      "adress": "1253 S Jackson St, Seattle, WA 98144",
+      "address": "3722 S Hudson St, Seattle, WA 98118",
       "zipcode": 98144,
       "phone": "206-694-4500",
       "website": "https://youthcare.org/homeless-youth-services/engagement-services/jackson-street/",

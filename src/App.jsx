@@ -1,7 +1,8 @@
 import React from 'react';
 import LandingPage from './LandingPage';
 import SearchResults from './SearchResults';
-import ShelterDetail from './ShelterDetail'
+import ShelterDetail from './ShelterDetail';
+import LOCATIONS from './LOCATIONS';
 import {
   BrowserRouter as Router,
   Route,
@@ -13,7 +14,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      locations: [],
+      locations: LOCATIONS.locations,
       selectedLocation: {}
     }
   }
