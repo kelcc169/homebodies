@@ -67,7 +67,7 @@ const LOCATIONS = {
     {
       "name": "Jackson Street",
       "address": "3722 S Hudson St, Seattle, WA 98118",
-      "zipcode": 98144,
+      "zipcode": 98118,
       "phone": "206-694-4500",
       "website": "https://youthcare.org/homeless-youth-services/engagement-services/jackson-street/",
       "hours": {

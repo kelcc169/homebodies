@@ -29,7 +29,7 @@ class App extends React.Component {
             <Link to='/show'>Show Page</Link>
           </nav>
           <Route exact path='/' render={() => <LandingPage />} />
-          <Route path='/results' render={() => <SearchResults />} />
+          <Route path='/results' render={(props) => <SearchResults locations={this.state.locations} {...props} />} />
           <Route path='/show' render={() => <ShelterDetail />} />
         </Router>
       </>

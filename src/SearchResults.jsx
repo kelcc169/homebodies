@@ -6,7 +6,7 @@ const SearchResults = (props) => {
   return(
     <div>
       <Map />
-      <ShelterList />
+      <ShelterList locations={props.locations}/>
     </div>
   )
 }
