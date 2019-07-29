@@ -1,7 +1,8 @@
 import React from 'react';
 import LandingPage from './LandingPage';
 import SearchResults from './SearchResults';
-import ShelterDetail from './ShelterDetail'
+import ShelterDetail from './ShelterDetail';
+import LOCATIONS from './LOCATIONS';
 import {
   BrowserRouter as Router,
   Route,
@@ -13,7 +14,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      locations: [],
+      locations: LOCATIONS.locations,
       selectedLocation: {}
     }
   }
@@ -28,7 +29,7 @@ class App extends React.Component {
             <Link to='/show'>Show Page</Link>
           </nav>
           <Route exact path='/' render={() => <LandingPage />} />
-          <Route path='/results' render={() => <SearchResults />} />
+          <Route path='/results' render={(props) => <SearchResults locations={this.state.locations} {...props} />} />
           <Route path='/show' render={() => <ShelterDetail />} />
         </Router>
       </>
