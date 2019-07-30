@@ -13,9 +13,10 @@ const ShelterList = (props) => {
                     {hour}
                   </p>
                 ))}
-            <span> <Link to={`/show${location.name}`}>
+            <span onClick={() => this.props.handleDetailsClick(location.name)}> 
+              {/* <Link to={`/show${location.name}`}> */}
                 {location.name}
-              </Link>
+              {/* </Link> */}
             </span>
                 {/* <h4>{location.name}</h4> */}
                 <p>{location.address}</p>
