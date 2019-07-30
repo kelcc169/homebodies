@@ -1,10 +1,11 @@
 import React from 'react';
+import TopNav from './TopNav';
 
 const ShelterDetail = (props) => {
   //const shelter = props.selectedLocation ? props.selectedLocation : [];
   return(
     <>
-    
+    <TopNav />
     <div>
         <h4 style={{textAlign: "center"}}>{props.selectedLocation.name}</h4>
         <p id="callbutton">Call</p>
