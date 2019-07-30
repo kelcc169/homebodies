@@ -45,8 +45,8 @@ const LOCATIONS = {
         "Sex Off. Allowed",
         "Criminal Rec. Allowed",
         "No ID Required"
-      ]
-
+      ],
+      "streetView": "./images/street1.png"
     },
     {
       "name": "Drop In and Young Adult Emergency Shelter",
