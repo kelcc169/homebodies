@@ -12,8 +12,7 @@ const SearchResults = (props) => {
       </div>
       <div className="list" >
         <ShelterList locations={props.locations} 
-                    selectedLocation={props.selectedLocation} 
-                    handleDetailsClick={props.handleDetailsClick} />
+                    selectedLocation={props.selectedLocation} />
       </div>
     </div>
   )

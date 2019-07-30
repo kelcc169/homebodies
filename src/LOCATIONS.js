@@ -1,11 +1,13 @@
 const LOCATIONS = {
   locations: [
     {
-      "name": "University District Youth Center",
+      "name": "U District Youth Center",
       "address": "4516 15th Ave NE, Seattle, WA 98105",
       "zipcode": 98105,
       "lat": 47.661859,
       "lng": -122.311670,
+      "distance": "10 miles",
+      "beds": 2,
       "phone": "(206) 526-2992",
       "website": "https://youthcare.org/blog/youthcare-welcomes-university-district-youth-center/",
       "hours": [
@@ -49,7 +51,7 @@ const LOCATIONS = {
 
     },
     {
-      "name": "Drop In and Young Adult Emergency Shelter",
+      "name": "Young Adult Emergency Shelter",
       "address": "2709 3rd Avenue Seattle, WA 98121",
       "zipcode": 98121,
       "lat": 47.617148,
@@ -67,7 +69,7 @@ const LOCATIONS = {
       ]
     },
     {
-      "name": "Homeless Youth for Peace and Empowerment (HYPE)",
+      "name": "HYPE",
       "address": "1609 19th Ave, Seattle, WA 98122",
       "zipcode": 98122,
       "lat": 47.615584,

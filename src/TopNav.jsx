@@ -4,10 +4,12 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import NavItem from 'react-bootstrap/NavItem';
 import NavLink from 'react-bootstrap/NavLink';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 
 const TopNav = (props) => (
   <Navbar expand="sm" variant="light" bg="light" fixed="top" className="topnav" >
     <Button variant="light"><i className="fas fa-chevron-left"></i></Button>
+    <Image src="./images/SafeYouthLogo.png" fluid />
     <Dropdown as={NavItem}>
       <Dropdown.Toggle as={NavLink}><i className="fas fa-bars"></i></Dropdown.Toggle>
       <Dropdown.Menu>
