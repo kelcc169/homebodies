@@ -5,8 +5,8 @@ import ShelterList from './ShelterList';
 const SearchResults = (props) => {
   return(
     <div>
-      <Map shelters={props.shelters} />
-      <ShelterList locations={props.shelters} />
+      <Map shelters={props.locations} />
+      <ShelterList locations={props.locations} />
     </div>
   )
 }

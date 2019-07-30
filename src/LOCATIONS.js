@@ -62,8 +62,6 @@ const LOCATIONS = {
       "lng": -122.307734,
       "phone": "(206) 726-8500",
       "website": "http://www.psks.org/",
-      "lng": -122.308,
-      "lat": 	47.6156,
       "hours": [
         "Monday: 5:30am - 9:30pm",
         "Tuesday: 5:30am - 9:30pm",
