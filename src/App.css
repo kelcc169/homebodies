@@ -5,3 +5,25 @@ body {
 .icons {
   font-size: 10px;
 }
+
+.map {
+  position: fixed;
+  top: 40px;
+}
+
+.topnav {
+  justify-content: space-between;
+  height: 40px;
+}
+
+.list {
+  position: absolute;
+  z-index: -1;
+  top: 336px;
+  margin-bottom: 65px;
+}
+
+.title {
+  background-color: #fff;
+  justify-content: space-around;
+}

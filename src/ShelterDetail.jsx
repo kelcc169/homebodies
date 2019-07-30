@@ -1,10 +1,11 @@
 import React from 'react';
+import TopNav from './TopNav';
 
 const ShelterDetail = (props) => {
   //const shelter = props.selectedLocation ? props.selectedLocation : [];
   return(
     <>
-    
+    <TopNav />
     <div>
         <h3>Location Details</h3>
         {/* {props.locations.map(location => ( */}
