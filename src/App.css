@@ -6,6 +6,35 @@ body {
   font-size: 10px;
 }
 
+.displayinfo {
+  text-align: left;
+  width: 220px;
+  height: 230px;
+  font-size: 12px;
+  display: flex;
+  vertical-align: top;
+  padding: 5px;
+  margin: 5px;
+}
+
+.titles {
+  font-weight: bold;
+}
+
+#callbutton {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.infowrap {
+  border: 1px solid black;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
 .map {
   position: fixed;
   top: 40px;

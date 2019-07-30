@@ -16,40 +16,28 @@ class App extends React.Component {
     super(props);
     this.state = {
       locations: LOCATIONS.locations,
-      //selectedLocation: LOCATIONS.locations[0]
-      selectedLocation: []
-      // [
-      //   LOCATIONS.locations[0], 
-      //   LOCATIONS.locations[1], 
-      //   LOCATIONS.locations[2],
-      //   LOCATIONS.locations[3],
-      //   LOCATIONS.locations[4]
-        //]
-        //null
-        //{}
-        //LOCATIONS.locations[0]
-      
+      selectedLocation: LOCATIONS.locations[1]  
     }
-    this.handleDetailsClick = this.handleDetailsClick.bind(this)
+    //this.handleDetailsClick = this.handleDetailsClick.bind(this)
   }
 
-  handleDetailsClick(e, i) {
-    // e.preventDefault()
-    let selectedLocation = Array.from(this.state.selectedLocation);
-    selectedLocation.push(this.state.locations[i]);
-    //const selectedLocation = this.state.locations[i]
-    this.setState({
-      selectedLocation: selectedLocation
-    })
-    // let shelters = this.state.locations;
-    // shelters = shelters.map((shelter, index) => {
-    //   shelter.isSelected = index === i;
-    //   return shelter
-    // })
-    // this.setState({
-    //   selectedLocation: shelters
-    // })
-  }
+  // handleDetailsClick(e, i) {
+  //   // e.preventDefault()
+  //   let selectedLocation = Array.from(this.state.selectedLocation);
+  //   selectedLocation.push(this.state.locations[i]);
+  //   //const selectedLocation = this.state.locations[i]
+  //   this.setState({
+  //     selectedLocation: selectedLocation
+  //   })
+  //   // let shelters = this.state.locations;
+  //   // shelters = shelters.map((shelter, index) => {
+  //   //   shelter.isSelected = index === i;
+  //   //   return shelter
+  //   // })
+  //   // this.setState({
+  //   //   selectedLocation: shelters
+  //   // })
+  // }
 
   render() {
     return(
