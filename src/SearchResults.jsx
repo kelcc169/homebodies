@@ -5,10 +5,14 @@ import ShelterList from './ShelterList';
 const SearchResults = (props) => {
   return(
     <div>
-      <Map shelters={props.locations} />
-      <ShelterList locations={props.locations} 
-                    selectedLocation={props.selectedLocation} 
-                    handleDetailsClick={props.handleDetailsClick} />
+      <TopNav />
+      <div className="map" >
+        <Map shelters={props.locations} />
+      </div>
+      <div className="list" >
+        <ShelterList locations={props.locations} 
+                    selectedLocation={props.selectedLocation} />
+      </div>
     </div>
   )
 }

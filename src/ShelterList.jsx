@@ -1,32 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
+import Nav from 'react-bootstrap/Nav';
 
 const ShelterList = (props) => {
   return(
-    <>
-      <div>
-        <h3>Shelter List</h3>
-        {props.locations.map((location, i) => (
-          <div> 
-              <h3 key={i}>{location.name}</h3>
-            <p>{location.address}</p>
-            {/* <p>Hours of Operation:</p>
-            {location.hours.map(hour => (
-              <p>
-                {hour}
-              </p>
-            ))} */}
-            
-            <Link to={"/show"}>
-              <button type="button">
-                  SEE DETAILS
-              </button>
-            </Link>
-            
-          </div>
-        ))}
-      </div>
-    </>
+    <div>
+      {props.locations.map((location, i) => (
+        <Link to="/show" >
+          <Card>
+            <Card.Body>
+              <Card.Title>
+              <Nav expand="xs" variant="light" bg="light" className="pretendnav" >
+                <Nav.Item>
+                  <Nav.Link href="#" eventKey="disabled" disabled >{location.name}</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="#" eventKey="disabled" disabled >{location.distance}</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="#" eventKey="disabled" disabled >{location.beds}</Nav.Link>
+                </Nav.Item>
+              </Nav>
+              </Card.Title>
+              <Card.Text>
+                {location.address}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Link>
+      ))}
+    </div>
   )
 }
 

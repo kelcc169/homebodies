@@ -1,27 +1,24 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Navbar from 'react-bootstrap/Navbar';
+import Dropdown from 'react-bootstrap/Dropdown';
+import NavItem from 'react-bootstrap/NavItem';
+import NavLink from 'react-bootstrap/NavLink';
+import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 
 const TopNav = (props) => (
-  <Container>
-    <Row className="justify-content-md-center">
-      <Col xs lg="2">
-        1 of 3
-      </Col>
-      <Col md="auto">Variable width content</Col>
-      <Col xs lg="2">
-        3 of 3
-      </Col>
-    </Row>
-    <Row>
-      <Col>1 of 3</Col>
-      <Col md="auto">Variable width content</Col>
-      <Col xs lg="2">
-        3 of 3
-      </Col>
-    </Row>
-  </Container>
-
+  <Navbar expand="sm" variant="light" bg="light" fixed="top" className="topnav" >
+    <Button variant="light"><i className="fas fa-chevron-left"></i></Button>
+    <Image src="./images/SafeYouthLogo.png" fluid />
+    <Dropdown as={NavItem}>
+      <Dropdown.Toggle as={NavLink}><i className="fas fa-bars"></i></Dropdown.Toggle>
+      <Dropdown.Menu>
+        <Dropdown.Item>      
+          <div>Sign In</div>
+      </Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  </Navbar>
 )
+
 export default TopNav;
