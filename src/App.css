@@ -2,6 +2,10 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: #030987;
+}
+
 .icons {
   font-size: 10px;
 }
@@ -96,6 +100,28 @@ body {
 .streetpic {
   margin: 0 auto;
   text-align: center;
+}
+
+.name {
+  font-size: 14px;
+  display: inline-block;
+  width: 150px;
+  color: #030987;
+}
+
+.h6 {
+  font-size: 14px;
+  display: inline-block;
+  width: 100px;
+  color: #030987;
+}
+
+.beds {
+  font-size: 14px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  color: #030987;
 }
 
 @media only screen and (max-width: 600px) {

@@ -8,10 +8,10 @@ import Image from 'react-bootstrap/Image';
 
 const TopNav = (props) => (
   <Navbar expand="sm" variant="light" bg="light" fixed="top" className="topnav" >
-    <Button variant="light"><i className="fas fa-chevron-left"></i></Button>
+    <Button variant="light" style={{color: '#030987'}}><i className="fas fa-chevron-left"></i></Button>
     <Image src="./images/SafeYouthLogo.png" fluid />
-    <Dropdown as={NavItem}>
-      <Dropdown.Toggle as={NavLink}><i className="fas fa-bars"></i></Dropdown.Toggle>
+    <Dropdown as={NavItem} >
+      <Dropdown.Toggle as={NavLink} style={{color: '#030987'}}><i className="fas fa-bars"></i></Dropdown.Toggle>
       <Dropdown.Menu>
         <Dropdown.Item>      
           <div>Sign In</div>

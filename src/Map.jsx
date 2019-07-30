@@ -58,18 +58,18 @@ class Map extends React.Component {
             {this.props.shelters.map(this._renderShelterMarker)}
             {this._renderPopup()} 
         </ReactMapGL>
-        <Nav expand="sm" variant="light" bg="light" className="title" >
-        <Nav.Item>
-          <Nav.Link href="#">Name</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#">Distance</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#">Open Beds</Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </>
+        <Nav expand="sm" variant="light" bg="light" className="title" style={{color: '#030987'}}>
+          <Nav.Item >
+            <Nav.Link href="#">Name</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#">Distance</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#">Open Beds</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </>
     );
   }
 }
