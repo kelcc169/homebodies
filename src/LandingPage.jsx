@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LandingPage = (props) => {
   return(
@@ -9,7 +10,7 @@ const LandingPage = (props) => {
       <br />
       <input type="text" placeholder="Please enter your location..."></input>
       <br />
-      <button type="submit">ENTER</button>
+      <Link to="/results"><button type="submit">ENTER</button></Link>
 
     </div>
     </>
