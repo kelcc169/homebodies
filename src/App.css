@@ -98,6 +98,25 @@ body {
   text-align: center;
 }
 
+#searchstuff {
+  border: 0px solid black;
+  width: 70vw;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.searchbar {
+  width: 70vw;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.mission {
+  font-style: italic;
+  text-align: left;
+}
+ 
+
 @media only screen and (max-width: 600px) {
   .displayinfo {
     text-align: left;
