@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-
 import ShelterPin from './ShelterPin';
 import ShelterPopup from './ShelterPopup';
 
@@ -49,6 +48,7 @@ class Map extends React.Component {
 
   render() {
     return (
+      
       <ReactMapGL
         {...this.state.viewport}
         onViewportChange={this._onViewportChange}

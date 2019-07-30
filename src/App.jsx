@@ -16,28 +16,39 @@ class App extends React.Component {
     this.state = {
       locations: LOCATIONS.locations,
       //selectedLocation: LOCATIONS.locations[0]
-      selectedLocation: {}
+      selectedLocation: []
+      // [
+      //   LOCATIONS.locations[0], 
+      //   LOCATIONS.locations[1], 
+      //   LOCATIONS.locations[2],
+      //   LOCATIONS.locations[3],
+      //   LOCATIONS.locations[4]
+        //]
+        //null
+        //{}
+        //LOCATIONS.locations[0]
+      
     }
-    //this.handleDetailsClick = this.handleDetailsClick.bind(this)
+    this.handleDetailsClick = this.handleDetailsClick.bind(this)
   }
 
-  // handleDetailsClick(shelter) {
-  //   console.log('fetching details for:', shelter);
-  //   const selectedLocation
-  //   //const url = '/api/drinks/' + drinkId;
-  //   // console.log("url is: ",url);
-  //   // let config = {
-  //   //   headers: {
-  //   //     Authorization: `Bearer ${this.state.token}`
-  //   //   }
-  //   // }
-  //   // axios.get(url, config).then(result => {
-  //     // console.log(result)
-  //     this.setState({
-  //       selectedLocation: selectedLocation
-  //     })
-  //   //})
-  // }
+  handleDetailsClick(e, i) {
+    // e.preventDefault()
+    let selectedLocation = Array.from(this.state.selectedLocation);
+    selectedLocation.push(this.state.locations[i]);
+    //const selectedLocation = this.state.locations[i]
+    this.setState({
+      selectedLocation: selectedLocation
+    })
+    // let shelters = this.state.locations;
+    // shelters = shelters.map((shelter, index) => {
+    //   shelter.isSelected = index === i;
+    //   return shelter
+    // })
+    // this.setState({
+    //   selectedLocation: shelters
+    // })
+  }
 
   render() {
     return(
@@ -50,7 +61,7 @@ class App extends React.Component {
           </nav>
           <Route exact path='/' render={() => <LandingPage />} />
           <Route path='/results' render={(props) => <SearchResults locations={this.state.locations} handleDetailsClick={this.handleDetailsClick} {...props} />} />
-          <Route path='/show' render={(props) => <ShelterDetail selectedLocation={this.state.selectedLocation} {...props}/>} />
+          <Route path='/show' render={(props) => <ShelterDetail selectedLocation={this.state.selectedLocation}  {...props}/>} />
         </Router>
       </>
     )

@@ -6,20 +6,24 @@ const ShelterList = (props) => {
     <>
       <div>
         <h3>Shelter List</h3>
-        {props.locations.map(location => (
-          <div>
+        {props.locations.map((location, i) => (
+          <div> 
+            {/* <Link to={`/show/${location.name}`}> */}
+              <h3 key={i}>{location.name}</h3>
+            {/* </Link> */}
+            {/* <h4>{location.name}</h4> */}
+            <p>{location.address}</p>
+            <p>Hours of Operation:</p>
             {location.hours.map(hour => (
-                  <p>
-                    {hour}
-                  </p>
-                ))}
-            <span onClick={() => this.props.handleDetailsClick(location.name)}> 
-              {/* <Link to={`/show${location.name}`}> */}
-                {location.name}
-              {/* </Link> */}
-            </span>
-                {/* <h4>{location.name}</h4> */}
-                <p>{location.address}</p>
+              <p>
+                {hour}
+              </p>
+            ))}
+            <button type="button" onClick={(e) => props.handleDetailsClick(e, i)}>
+              <Link to={`/show/${location.name}`}>
+                SEE DETAILS
+              </Link>
+            </button>
           </div>
         ))}
       </div>
