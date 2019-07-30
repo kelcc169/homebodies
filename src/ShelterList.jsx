@@ -11,19 +11,11 @@ const ShelterList = (props) => {
           <Card>
             <Card.Body>
               <Card.Title>
-              <Nav expand="xs" variant="light" bg="light" className="pretendnav" >
-                <Nav.Item>
-                  <Nav.Link href="#" eventKey="disabled" disabled >{location.name}</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link href="#" eventKey="disabled" disabled >{location.distance}</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link href="#" eventKey="disabled" disabled >{location.beds}</Nav.Link>
-                </Nav.Item>
-              </Nav>
+                <h6 className="name" >{location.name}</h6>
+                <h6 className="h6" >{location.distance}</h6>
+                <h6 className="beds" >{location.beds}</h6>
               </Card.Title>
-              <Card.Text>
+              <Card.Text style={{color: '#030987'} }>
                 {location.address}
               </Card.Text>
             </Card.Body>

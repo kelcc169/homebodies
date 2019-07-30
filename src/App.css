@@ -2,6 +2,10 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: #030987;
+}
+
 .icons {
   font-size: 10px;
 }
@@ -98,6 +102,28 @@ body {
   text-align: center;
 }
 
+.name {
+  font-size: 14px;
+  display: inline-block;
+  width: 150px;
+  color: #030987;
+}
+
+.h6 {
+  font-size: 14px;
+  display: inline-block;
+  width: 100px;
+  color: #030987;
+}
+
+.beds {
+  font-size: 14px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  color: #030987;
+}
+
 #searchstuff {
   border: 0px solid black;
   width: 70vw;
@@ -115,7 +141,6 @@ body {
   font-style: italic;
   text-align: left;
 }
- 
 
 @media only screen and (max-width: 600px) {
   .displayinfo {

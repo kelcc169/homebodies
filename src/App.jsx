@@ -31,7 +31,7 @@ class App extends React.Component {
           </nav>
           <Route exact path='/' render={() => <LandingPage />} />
           <Route path='/results' render={(props) => <SearchResults locations={this.state.locations} {...props} />} />
-          <Route path='/show' render={(props) => <ShelterDetail selectedLocation={this.state.selectedLocation} {...props}/>} />
+          <Route path='/show' render={(props) => <ShelterDetail selectedLocation={this.state.selectedLocation} {...props} />} />
           <BottomNav />
         </Router>
       </>

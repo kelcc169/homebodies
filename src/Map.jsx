@@ -2,6 +2,7 @@ import React from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import ShelterPin from './ShelterPin';
 import ShelterPopup from './ShelterPopup';
+import Nav from 'react-bootstrap/Nav';
 
 const TOKEN = 'pk.eyJ1Ijoia2VsY2MxNjkiLCJhIjoiY2p4YzFnODJhMGh4dDN5bWFkOHdpaGxkYSJ9.P05Jkczde1J1vx7262976A'
 
@@ -9,7 +10,7 @@ class Map extends React.Component {
   state = {
     viewport: {
       width: '100vw',
-      height: '50vh',
+      height: '40vh',
       latitude: 47.617170,
       longitude: -122.326948,
       zoom: 10
@@ -48,15 +49,27 @@ class Map extends React.Component {
 
   render() {
     return (
-      
-      <ReactMapGL
-        {...this.state.viewport}
-        onViewportChange={this._onViewportChange}
-        mapboxApiAccessToken={TOKEN}
-        >
-          {this.props.shelters.map(this._renderShelterMarker)}
-          {this._renderPopup()} 
-      </ReactMapGL>
+      <>
+        <ReactMapGL
+          {...this.state.viewport}
+          onViewportChange={this._onViewportChange}
+          mapboxApiAccessToken={TOKEN}
+          >
+            {this.props.shelters.map(this._renderShelterMarker)}
+            {this._renderPopup()} 
+        </ReactMapGL>
+        <Nav expand="sm" variant="light" bg="light" className="title" style={{color: '#030987'}}>
+          <Nav.Item >
+            <Nav.Link href="#">Name</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#">Distance</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="#">Open Beds</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </>
     );
   }
 }
