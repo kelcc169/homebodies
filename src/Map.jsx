@@ -9,11 +9,11 @@ const TOKEN = 'pk.eyJ1Ijoia2VsY2MxNjkiLCJhIjoiY2p4YzFnODJhMGh4dDN5bWFkOHdpaGxkYS
 class Map extends React.Component {
   state = {
     viewport: {
-      width: '85vw',
+      width: '100vw',
       height: '50vh',
       latitude: 47.617170,
       longitude: -122.326948,
-      zoom: 11
+      zoom: 10
     },
     popupInfo: null
   };
