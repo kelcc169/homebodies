@@ -16,7 +16,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       locations: LOCATIONS.locations,
-      selectedLocation: LOCATIONS.locations[1]  
+      selectedLocation: LOCATIONS.locations[0]  
     }
   }
 

@@ -27,7 +27,7 @@ const LandingPage = (props) => {
         <h6 className="mission">Help youth find a safe place to sleep tonight</h6>
         {/* <img src="http://placekitten.com/g/200/200" /> */}
         <br />
-        <h6 style={{textAligh: "left", marginTop: '60px'}}>Find a bed:</h6>
+        <h6 style={{textAligh: "left", marginTop: '60px', color:'#030987'}}>Find a bed:</h6>
         <Link to="/results">
         <input style={{textAligh: "left", padding: "5px", fontSize: '15px'}} className="searchbar" type="text" placeholder="🔎 type in zip, neighborhood or school" ></input>
         </Link>
