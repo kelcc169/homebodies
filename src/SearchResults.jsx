@@ -2,7 +2,6 @@ import React from 'react';
 import Map from './Map';
 import TopNav from './TopNav'
 import ShelterList from './ShelterList';
-import TopNav from './TopNav';
 
 const SearchResults = (props) => {
   return(

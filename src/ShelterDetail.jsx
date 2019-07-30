@@ -9,7 +9,7 @@ const ShelterDetail = (props) => {
       <div className='streetpic'>
         <img id="streetView" src={props.selectedLocation.streetView} />
       </div>
-        <h4 style={{textAlign: "center"}}>{props.selectedLocation.name}</h4>
+        <h4 style={{textAlign: "center", color: '#030987'}}>{props.selectedLocation.name}</h4>
         <p id="callbutton">Call</p>
           <div className='infowrap'>
             <div className="displayinfo" style={{display: "inline-block"}}>

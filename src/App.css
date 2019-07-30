@@ -19,6 +19,7 @@ a {
   vertical-align: top;
   padding: 5px;
   margin: 5px;
+  color: #030987;
 }
 
 .titles {
@@ -27,10 +28,11 @@ a {
 
 #callbutton {
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #030987;
   border-radius: 5px;
   width: 60px;
   margin: 0 auto;
+  color: #030987;
 }
 
 .infowrap {
@@ -125,7 +127,8 @@ a {
 }
 
 #searchstuff {
-  border: 0px solid black;
+  border: 0px solid#030987;
+  ;
   width: 70vw;
   margin: 0 auto;
   text-align: left;
@@ -133,13 +136,15 @@ a {
 
 .searchbar {
   width: 70vw;
-  border: 1px solid black;
+  border: 1px solid#030987;
+  ;
   border-radius: 10px;
 }
 
 .mission {
   font-style: italic;
   text-align: left;
+  color: #030987;
 }
 
 @media only screen and (max-width: 600px) {
