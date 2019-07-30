@@ -22,13 +22,16 @@ const LandingPage = (props) => {
           </Dropdown.Menu>
         </Dropdown>
       </Navbar>
-      <div>
-        <h1>Welcome to the Shelter App</h1>
-        <img src="http://placekitten.com/g/200/200" />
+      <div id="searchstuff">
+        <h6 className="mission" style={{marginTop: '95px'}}>Mission:</h6>
+        <h6 className="mission">Help youth find a safe place to sleep tonight</h6>
+        {/* <img src="http://placekitten.com/g/200/200" /> */}
         <br />
-        <input type="text" placeholder="Please enter your location..."></input>
-        <br />
-        <Link to="/results"><button type="submit">ENTER</button></Link>
+        <h6 style={{textAligh: "left", marginTop: '60px'}}>Find a bed:</h6>
+        <Link to="/results">
+        <input style={{textAligh: "left", padding: "5px", fontSize: '15px'}} className="searchbar" type="text" placeholder="🔎 type in zip, neighborhood or school" ></input>
+        </Link>
+        {/* <Link to="/results"><button type="submit">ENTER</button></Link> */}
       </div>
     </>
   )
