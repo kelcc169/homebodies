@@ -10,12 +10,12 @@ const ShelterList = (props) => {
           <div> 
               <h3 key={i}>{location.name}</h3>
             <p>{location.address}</p>
-            <p>Hours of Operation:</p>
+            {/* <p>Hours of Operation:</p>
             {location.hours.map(hour => (
               <p>
                 {hour}
               </p>
-            ))}
+            ))} */}
             
             <Link to={"/show"}>
               <button type="button">
