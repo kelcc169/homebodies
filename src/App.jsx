@@ -2,6 +2,7 @@ import React from 'react';
 import LandingPage from './LandingPage';
 import SearchResults from './SearchResults';
 import ShelterDetail from './ShelterDetail';
+import BottomNav from './BottomNav';
 import LOCATIONS from './LOCATIONS';
 import {
   BrowserRouter as Router,
@@ -60,8 +61,9 @@ class App extends React.Component {
             <Link to='/show'>Show Page</Link>
           </nav>
           <Route exact path='/' render={() => <LandingPage />} />
-          <Route path='/results' render={(props) => <SearchResults locations={this.state.locations} handleDetailsClick={this.handleDetailsClick} {...props} />} />
-          <Route path='/show' render={(props) => <ShelterDetail selectedLocation={this.state.selectedLocation}  {...props}/>} />
+          <Route path='/results' render={(props) => <SearchResults locations={this.state.locations} {...props} />} />
+          <Route path='/show' render={(props) => <ShelterDetail selectedLocation={this.state.selectedLocation} {...props}/>} />
+          <BottomNav />
         </Router>
       </>
     )
