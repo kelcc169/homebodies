@@ -15,7 +15,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       locations: LOCATIONS.locations,
-      selectedLocation: {}
+      selectedLocation: LOCATIONS.locations[0]
     }
   }
 
@@ -29,8 +29,8 @@ class App extends React.Component {
             <Link to='/show'>Show Page</Link>
           </nav>
           <Route exact path='/' render={() => <LandingPage />} />
-          <Route path='/results' render={(props) => <SearchResults shelters={this.state.locations} {...props} />} />
-          <Route path='/show' render={() => <ShelterDetail />} />
+          <Route path='/results' render={(props) => <SearchResults locations={this.state.locations} {...props} />} />
+          <Route path='/show' render={(props) => <ShelterDetail selectedLocation={this.state.selectedLocation} {...props}/>} />
         </Router>
       </>
     )
