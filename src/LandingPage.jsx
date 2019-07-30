@@ -2,7 +2,17 @@ import React from 'react';
 
 const LandingPage = (props) => {
   return(
-    <div>I'm a landing page</div>
+    <>
+    <div>
+      <h1>Welcome to the Shelter App</h1>
+      <img src="http://placekitten.com/g/200/200" />
+      <br />
+      <input type="text" placeholder="Please enter your location..."></input>
+      <br />
+      <button type="submit">ENTER</button>
+
+    </div>
+    </>
   )
 }
 
