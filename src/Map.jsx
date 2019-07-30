@@ -29,7 +29,7 @@ class Map extends React.Component {
   };
 
   _renderPopup() {
-    const {popupInfo} = this.state.popupInfo;
+    const {popupInfo} = this.state;
     
     return (
       popupInfo && (
@@ -54,8 +54,9 @@ class Map extends React.Component {
         onViewportChange={this._onViewportChange}
         mapboxApiAccessToken={TOKEN}
         >
-          {this.props.shelters.map(this._renderShelterMarker)} 
-        </ReactMapGL>
+          {this.props.shelters.map(this._renderShelterMarker)}
+          {this._renderPopup()} 
+      </ReactMapGL>
     );
   }
 }

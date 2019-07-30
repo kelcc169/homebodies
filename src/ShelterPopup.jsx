@@ -3,9 +3,7 @@ import React from 'react';
 const ShelterPopup = (props) => {
   return(
     <div>
-      <div>
-        {props.name}
-      </div>
+      <h6>{props.info.name}</h6>
     </div>
   )
 }
