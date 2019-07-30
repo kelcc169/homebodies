@@ -6,7 +6,9 @@ const SearchResults = (props) => {
   return(
     <div>
       <Map shelters={props.locations} />
-      <ShelterList locations={props.locations} />
+      <ShelterList locations={props.locations} 
+                    selectedLocation={props.selectedLocation} 
+                    handleDetailsClick={props.handleDetailsClick} />
     </div>
   )
 }
