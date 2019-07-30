@@ -10,13 +10,13 @@ const ShelterDetail = (props) => {
         <p id="callbutton">Call</p>
           <div className='infowrap'>
             <div className="displayinfo" style={{display: "inline-block"}}>
-              <img src="./images/orion.png" style={{height: "130px", width: "200px"}}/>
+              <img id='shelterpic' src="./images/orion.png" />
               {/* <h5>{props.selectedLocation.address}</h5> */}
             </div>
             <div className="displayinfo" style={{display: "inline-block"}}>
               <p className="titles">Hours of Availability</p>
               {props.selectedLocation.hours.map(hour => (
-                <p style={{lineHeight: "1px", fontStyle: "italic"}}>
+                <p id="hours" style={{lineHeight: "1px", fontStyle: "italic"}}>
                   {hour}
                 </p>
               ))}
