@@ -63,6 +63,17 @@ body {
   width: 200px;
 }
 
+#streetView {
+  height: 200px;
+  width: 300px;
+}
+
+.streetpic {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 @media only screen and (max-width: 600px) {
   .displayinfo {
     text-align: left;
@@ -73,6 +84,7 @@ body {
     padding: 5px;
     margin: 10px;
     font-size: 10px;
+    
   }
 
   #hours {
@@ -81,9 +93,8 @@ body {
   }
 
   #shelterpic {
-    height: 100px;
-    width: 120px;
-    padding: 10px;
+    height: 140px;
+    width: 140px;
   }
 
   .infowrap {
