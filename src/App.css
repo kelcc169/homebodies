@@ -30,9 +30,10 @@ body {
 }
 
 .infowrap {
-  border: 1px solid black;
   max-width: 90vw;
   margin: 0 auto;
+  position: relative;
+  margin-left: 30vw;
 }
 
 .map {
@@ -80,4 +81,49 @@ body {
 
 .hidden {
   color: #f8f9fa;
+}
+
+#shelterpic {
+  height: 150px;
+  width: 200px;
+}
+
+#streetView {
+  height: 200px;
+  width: 300px;
+}
+
+.streetpic {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .displayinfo {
+    text-align: left;
+    width: 140px;
+    height: 130px;
+    display: flex;
+    vertical-align: top;
+    padding: 5px;
+    margin: 10px;
+    font-size: 10px;
+  }
+
+  #hours {
+    font-size: 8px;
+    line-height: 0.5px;
+  }
+
+  #shelterpic {
+    height: 140px;
+    width: 140px;
+  }
+
+  .infowrap {
+    max-width: 90vw;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 10vw;
+  }
 }
