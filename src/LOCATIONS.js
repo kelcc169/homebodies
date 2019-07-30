@@ -34,7 +34,19 @@ const LOCATIONS = {
         "Friday: 12:00pm to 3:00pm",
         "Saturday: Closed",
         "Sunday: Closed"
+      ],
+      "offers": [
+        "Food",
+        "Shower",
+        "Beds", 
+        "Clothes"
+      ],
+      "qualifications": [
+        "Sex Off. Allowed",
+        "Criminal Rec. Allowed",
+        "No ID Required"
       ]
+
     },
     {
       "name": "Drop In and Young Adult Emergency Shelter",
